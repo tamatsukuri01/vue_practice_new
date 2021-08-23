@@ -30,6 +30,7 @@
 <script>
 export default {
   created () {
+    //ストアからデータを取得
     this.addresses = this.$store.state.addresses
   },
   data () {
@@ -40,6 +41,7 @@ export default {
         { text: 'メールアドレス', value: 'email' },
         { text: '住所', value: 'address' }
       ],
+      //空の配列にしておく
       addresses: []
     }
   }
